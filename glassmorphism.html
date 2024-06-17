@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlassMorphism</title>
+    <style>
+        
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin:0px;
+            background: black;
+            color: white;
+            position: absolute;
+            height: 100vh;
+            position: relative;
+        }
+
+        .d-centre{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .c1,.c2,.c3,.c4{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+        }
+
+        .c1{
+            background:linear-gradient(orange,yellow);
+            top: 50px;
+            left: 50px;
+            border-radius: 50% 50%;
+        }
+
+        .c2{
+            background:linear-gradient(yellow,green);
+            bottom: 50px;
+            left: 50px;
+            border-radius: 50% 50% 20% 10%;
+            height: 170px;
+        }
+
+        .c3{
+            background:linear-gradient(rgb(60, 146, 226),rgb(5, 73, 5));
+            bottom: 50px;
+            right: 50px;
+            border-radius: 30% 20% 60% 40%;
+        }
+
+        .stack{
+            width: 100vw;
+            height: 100vh;
+            backdrop-filter: blur(20px);
+           
+        }
+
+        .cc{
+            background: rgba(196, 196, 196, 0.116);
+            position: absolute;
+            height: 250px;
+            width: 450px;
+            padding: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.685);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(128, 128, 128, 0.685);
+            backdrop-filter: blur(8px);
+        }
+
+        .title{
+            font-size: 1.5rem;
+        }
+
+        .num{
+            font-size: 2rem;
+            margin-top: 5rem;
+        }
+
+        .details{
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+        }
+
+        .top{
+            font-size: .7rem;
+        }
+
+        .btn{
+            font-size: 1.3rem;
+            letter-spacing:2px ;
+        }
+
+        .details > div:last-child{
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .c4{
+            background:linear-gradient(rgb(128, 0, 100), red);
+            border-radius: 50% 50%;
+            right: 49px;
+            top:240px;
+         }
+
+    </style>
+</head>
+<body class="d-centre">
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="stack"></div>
+    <div class="c4"></div>
+    <div class="cc">
+        <div class="title">Credit Card</div>
+        <div class="num">
+            4242 4242 4242 4242
+        </div>
+        <div class="details">
+            <div class="div">
+                <div class="top">Card holder</div>
+                <div class="btn">Shekhar</div>
+            </div>
+            <div class="div">
+                <div class="top">Expiry Date</div>
+                <div class="btn">22/24</div>
+            </div>
+            <div class="div">
+                VISA
+            </div>
+        </div>
+    </div>
+</body>
+</html>
